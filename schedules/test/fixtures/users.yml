@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  start: 2021-09-16 06:59:48
+  end: 2021-09-16 06:59:48
+  check: false
+
+two:
+  title: MyString
+  start: 2021-09-16 06:59:48
+  end: 2021-09-16 06:59:48
+  check: false
