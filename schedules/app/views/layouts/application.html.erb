@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Schedules</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="title-line">
+      <h2>Ruby on Rails スケジュール管理アプリ</h2>
+    </header>
+    <%= yield %>
+    
+    <footer class="title-line nonchange">
+     <%= case controller.action_name
+     when "index"
+      render"shared/time-sum"
+     else
+      render"shared/time"
+    end %>
+    </footer>
+  </body>
+</html>

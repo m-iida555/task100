@@ -1,0 +1,21 @@
+<body onload="LoadProc();">
+<div id="layouts">
+<h2>現在の時刻:
+ <div id="datetime" class="nonchange"></div>
+</h2>
+</div>
+</body>
+
+<script type="text/javascript">
+    let now = new Date(); //　日時の宣言
+    function LoadProc() {
+      let target = document.getElementById("datetime");
+
+      let Year = now.getFullYear();
+      let Month = now.getMonth()+1;
+      let Date = now.getDate();
+
+      target.innerHTML = Year + "年" + Month + "月" + Date + "日";
+    }
+
+  </script>
